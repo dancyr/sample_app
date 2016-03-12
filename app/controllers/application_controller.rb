@@ -4,7 +4,6 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
   
   def index
-    puts "Hello world! I am talking to you, Heroku."
-    
+    render text: "Hello world! I am talking to you, Heroku."
   end
 end
